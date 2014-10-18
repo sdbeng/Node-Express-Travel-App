@@ -1,3 +1,6 @@
+//specify imports at the top
+var fortune = require('./lib/fortune.js');
+
 var express = require('express');
 
 var app = express();
@@ -22,8 +25,8 @@ app.get('/', function(req, res){
 });
 
 app.get('/about', function(req, res){
-	var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
-	res.render('about', {fortune: randomFortune});
+	//var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+	res.render('about', {fortune: fortune.getFortune()});
 	//res.type('text/plain');
 	//res.send('About Meadowlark Travel Tourism');
 });
@@ -49,14 +52,6 @@ app.listen(app.get('port'), function(){
 	console.log('Express started on http//localhost:' +
 		app.get('port') + '; press Ctrl-C to terminate.');
 });
-
-//array to show dynamic content views
-var fortunes = [
-	"Pray will help you more than anything",
-	"God is good",
-	"Keep it simple, teach your kids to love",
-	"Work hard, give out your hert but not desperate for those who don't believe in you"
-];
 
 
 
