@@ -54,7 +54,8 @@ app.listen(app.get('port'), function(){
 var fortunes = [
 	"Pray will help you more than anything",
 	"God is good",
-	"Keep it simple, teach your kids to love"
+	"Keep it simple, teach your kids to love",
+	"Work hard, give out your hert but not desperate for those who don't believe in you"
 ];
 
 
