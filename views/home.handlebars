@@ -13,24 +13,24 @@ HTTP Request Methods
 
 <h2>Handlebars Basics</h2>
 For example, if my context object is { name: 'Buttercup' }, and my template is
-<pre><code>
+
 	<p>Hello, {{name}}!</p>, {{name}}
-</code>
+
 	
-</pre>
+
 will be replaced with Buttercup. What if you want to pass HTML to the template? For example, if our context was instead
-<code>
+
 	{ name:'<b>Buttercup</b>' }
-</code> 
+
 using the previous template will result in 
-<code>
-	<p>Hello,
-&lt;b&gt;Buttercup&lt;b&gt;</p>
-</code>
+
+<p>Hello,&lt;b&gt;Buttercup&lt;b&gt;</p>
+
 which is probably not what you’re looking for. To solve this problem, simply use three curly brackets instead of two:
-<code>
+
 	{{{name}}}
-</code>
+
+<h3>Foo</h3>
  
 
 
