@@ -12,11 +12,14 @@ HTTP Request Methods
 <p>With Node and Express, you are fully in charge of what methods you respond to. In Express, you’ll usually be writing handlers for specific methods.</p>
 
 <h2>Handlebars Basics</h2>
-<p>For example, if my context object is { name: 'Buttercup' }, and my template is <p>Hello, {{name}}!</p>, {{name}} will be replaced with Buttercup. What if you
+<pre>
+	<p>For example, if my context object is { name: 'Buttercup' }, and my template is <p>Hello, {{name}}!</p>, {{name}} will be replaced with Buttercup. What if you
 want to pass HTML to the template? For example, if our context was instead { name:
 '<b>Buttercup</b>' }, using the previous template will result in <p>Hello,
 &lt;b&gt;Buttercup&lt;b&gt;</p>, which is probably not what you’re looking for. To
 solve this problem, simply use three curly brackets instead of two: {{{name}}}.</p>
+</pre>
+
 
 
 
