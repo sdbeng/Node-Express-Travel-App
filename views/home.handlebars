@@ -31,6 +31,18 @@ which is probably not what you’re looking for. To solve this problem, simply u
 	{{{name}}}
 
 <h3>Foo</h3>
+Hello {{{world}}}
+
+Comments
+Comments in Handlebars look like {{! comment goes here }}. It’s important to understand
+the distinction between Handlebars comments and HTML comments. Consider
+the following template:
+{{! super-secret comment }}
+<!-- not-so-secret comment -->
+Assuming this is a server-side template, the super-secret comment will never be sent to
+the browser, whereas the not-so-secret comment will be visible if the user inspects the
+HTML source. You should prefer Handlebars comments for anything that exposes implementation
+details, or anything else you don’t want exposed.
  
 
 
