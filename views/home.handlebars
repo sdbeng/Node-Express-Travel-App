@@ -8,6 +8,5 @@
 <p>The HTTP protocol defines a collection of <em>request methods</em> often refreed to as HTTP verbs, that a client uses to communicate with a server. Far and away, the most common methods are GET and POST.</p>
 <p>When you type a URL into a browser (or click a link), the browser issues an HTTP GET request to the server. The important information passed to the server is the URL path and querystring. The combination of method, path, and querystring is what your app uses to determine how to respond.</p>
 <p>For a website, most of your pages will respond to GET requests. POST requests are usually
-reserved for sending information back to the server (form processing, for example). It’s
-quite common for POST requests to respond with the same HTML as the corresponding
-GET request after the server has processed any information included in the request, like a form.</p>
+reserved for sending information back to the server (form processing, for example). It’s quite common for POST requests to respond with the same HTML as the corresponding GET request after the server has processed any information included in the request, like a form.</p>
+<p>Web services, on the other hand, often get more creative with the HTTP methods used. For example, there’s an HTTP method called DELETE that is useful for, well, an API call that deletes things.</p>
