@@ -2,5 +2,7 @@
 The purpose of the package.json is:
 Describe your project and to dependencies.
 I have express 4.9.x and express3-handlebars 0.5.2.
+
+Continue working tGfmfandletmesupportthem withthe kw and wisdom yougaveme as a gift.
 ===
 Serg
